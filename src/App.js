@@ -6,9 +6,9 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
 } from "react-router-dom";
 import UserList from "./components/pages/userList/UserList";
+import User from "./components/user/User";
 
 
 function App() {
