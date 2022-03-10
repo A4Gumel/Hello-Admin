@@ -3,6 +3,7 @@ import "./sidebar.css"
 import {HomeRounded, TimelineRounded, TrendingUpRounded, PeopleRounded, StorefrontRounded,
     AttachMoneyRounded, AssessmentRounded, MailRounded, FeedbackRounded, MessageRounded,
     ReportRounded} from "@mui/icons-material";
+import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
     return (
@@ -12,8 +13,10 @@ export default function Sidebar() {
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem">
-                            <HomeRounded className='sidebarIcon'/>
-                            Home
+                            <Link to="/" className="link">
+                                <HomeRounded className='sidebarIcon'/>
+                                Home
+                            </Link>
                         </li>
                         <li className="sidebarListItem">
                             <TimelineRounded className='sidebarIcon'/>
@@ -30,12 +33,16 @@ export default function Sidebar() {
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem">
-                            <PeopleRounded className='sidebarIcon'/>
-                            Users
+                            <Link to="/users" className="link">
+                                <PeopleRounded className='sidebarIcon'/>
+                                Users
+                            </Link>
                         </li>
                         <li className="sidebarListItem">
-                            <StorefrontRounded className='sidebarIcon'/>
-                            Products
+                            <Link to="/products" className="link">
+                                <StorefrontRounded className='sidebarIcon'/>
+                                Products
+                            </Link>
                         </li>
                         <li className="sidebarListItem">
                             <AttachMoneyRounded className='sidebarIcon'/>
